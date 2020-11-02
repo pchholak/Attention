@@ -3,7 +3,7 @@
 
 %% Given
 iSubj = 5;
-info.res_path_coh = 'D:/Research/Academic/PhD/Attention/Coherence';
+info.res_path_coh = 'D:/Research/Academic/PhD/Attention/Coherence/';
 keywd = 'Coh(120by3s)';
 
 %% Locate and list .mat files
