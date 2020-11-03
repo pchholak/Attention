@@ -19,5 +19,5 @@ img = srcI-srcB;
 
 %% Prepare to export
 xyz.ImageGridAmp = img;
-xyz.Comment = ['Diff_' keywd '_Subject' sprintf('%02d',sub)];
+xyz.Comment = ['Diff_' keywd '_Subject' sprintf('%02d',iSubj)];
 clear info
