@@ -18,11 +18,19 @@ fmatB2 = dir([info.res_path_coh, sprintf('%s_%0.4fHz_Subject%02d_%s.mat', ...
     keywd, f2, iSubj, 'B')]);
 
 %% Load files, average and take difference
-load([info.res_path_coh, fmatI(1).name]); clear fmatI
-srcm = mean(src, 2); srcI = [srcm, srcm];
-load([info.res_path_coh, fmatB(1).name]); clear fmatB
-srcm = mean(src, 2); srcB = [srcm, srcm];
-img = srcI-srcB;
+load([info.res_path_coh, fmatI1(1).name]); clear fmatI1
+srcm = mean(src, 2); srcI1 = [srcm, srcm];
+load([info.res_path_coh, fmatB1(1).name]); clear fmatB1
+srcm = mean(src, 2); srcB1 = [srcm, srcm];
+img1 = srcI1-srcB1;
+
+load([info.res_path_coh, fmatI2(1).name]); clear fmatI2
+srcm = mean(src, 2); srcI2 = [srcm, srcm];
+load([info.res_path_coh, fmatB2(1).name]); clear fmatB2
+srcm = mean(src, 2); srcB2 = [srcm, srcm];
+img2 = srcI2-srcB2;
+
+img = (img1 + img2) / 2;
 
 %% Prepare to export
 xyz.ImageGridAmp = img;
