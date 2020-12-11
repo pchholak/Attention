@@ -1,9 +1,8 @@
 function [pm1, f] = psd_sub(sub)
 
 %% Given
-fscouts = ['D:\Research\Academic\PhD\Perception\' ...
-    'Results\SourceLocal\scout_V1_V2']; % Scouts for V1 and V2
-root = 'D:\MATLAB\Perception\Trials\';
+fscouts = ['path_to_data\scout_V1_V2']; % Scouts for V1 and V2
+root = 'path_to_results\Trials\';
 
 %% Load scouts
 load(fscouts, 'Scouts')

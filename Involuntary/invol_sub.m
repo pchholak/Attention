@@ -1,10 +1,9 @@
 function [tau1, tau2] = invol_sub(sub)
 
 %% Given
-fscouts = ['D:\Research\Academic\PhD\Perception\' ...
-    'Results\SourceLocal\scout_V1_V2']; % Scouts for V1 and V2
+fscouts = ['path_to_data\scout_V1_V2']; % Scouts for V1 and V2
+root = 'path_to_results\Trials\';
 sf = 'I';
-root = 'D:\MATLAB\Perception\Trials\';
 f1c = 120/9; f2c = 120/7;
 fc = 1; FWHM_tc = 12;
 

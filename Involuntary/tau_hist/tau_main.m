@@ -4,7 +4,7 @@ xxx
 sub = [5:9 11 12]; nsub = length(sub);
 
 %% Add to path
-path = 'D:\MATLAB\Perception\Involuntary';
+path = '..';
 addpath(path)
 
 % Tm = [];
